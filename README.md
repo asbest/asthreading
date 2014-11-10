@@ -1,4 +1,4 @@
 asthreading
 ===========
 
-Easy multithreading with Python
+Easy naive multithreading with Python
