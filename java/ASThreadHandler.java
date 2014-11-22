@@ -9,7 +9,7 @@ public class ASThreadHandler {
 	
 	
 
-	private static void launchASThreads(int numThreads, Object[] objects) {
+	static Thread[] launchASThreads(int numThreads, Object[] objects) {
 		
 		Thread[] threads = new Thread[numThreads];
 		
@@ -22,8 +22,9 @@ public class ASThreadHandler {
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+			}
 		}
 		
-	}
+		return threads;
 
 }
