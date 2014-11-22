@@ -17,6 +17,11 @@ public class ASThreadHandler {
 			threads[threadID] = new ASThread(numThreads, objects);
 
 			threads[threadID].start();
+			try {
+				threads[threadID].join();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 		}
 		
 	}
